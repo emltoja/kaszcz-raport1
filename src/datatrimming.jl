@@ -1,7 +1,7 @@
 using DataFrames
 using CSV
 
-menpowerlifting = DataFrame(CSV.File("menpowerlifting.csv"))
+menpowerlifting = DataFrame(CSV.File("../data/menpowerlifting.csv"))
 # Remove missing values
 dropmissing!(menpowerlifting, :Best3SquatKg)
 dropmissing!(menpowerlifting, :Best3BenchKg)
