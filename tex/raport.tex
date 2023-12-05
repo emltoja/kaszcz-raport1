@@ -1,0 +1,39 @@
+\documentclass{article}
+\usepackage{polski}
+\usepackage{tgpagella}
+\usepackage{hyperref}
+\usepackage[explicit]{titlesec}
+
+
+\hypersetup{
+colorlinks=true,
+urlcolor=blue
+}
+
+%\titleformat{\section}
+%	{\normalfont}{\thesection}{1em}{\MakeUppercase{#1}}
+
+\author{Emil Olszewski, Artur Sadurski}
+\date{\today}
+\title{Komputerowa analiza szeregów czasowych \\ Raport 1.}
+
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Przedmiotem analizy jest losowa próbka 5000 danych ze zbioru zaw1ierającego informacje na temat 
+męskich trójboistów zrzeszonych w ramach federacji IPF. \href{https://gitlab.com/openpowerlifting/opl-data}{Dane} zostały udostępnione na warunkach licencji GNU AGPLv3. 
+Przeanalizowano zależność pomiędzy masą ciała zawodnika a jego wynikiem w kateogrii RAW, . 
+\end{abstract}
+
+\section{Aparatura}
+Do analizy danych użyto języka \textit{Julia} w wersji \textit{1.9.3} wraz z następującymi bibliotekami:
+\begin{itemize}
+\item \textit{DataFrames, Statistics} - analiza danych.
+\item \textit{Plots} - wykresy i wizualizacja. 
+\item \textit{GLM} - model regresji liniowych. 
+\end{itemize}
+
+
+\end{document}
