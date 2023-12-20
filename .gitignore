@@ -10,3 +10,5 @@
 *.run.xml
 *.fdb_latexmk
 *.fls
+# Vscode config files 
+.vscode
